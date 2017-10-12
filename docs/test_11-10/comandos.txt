@@ -1,0 +1,26 @@
+TAKE_OBJECT
+
+bender.l_arm.set_position_named('home')
+bender.l_arm.set_position_named('premanip_1')
+bender.l_arm.set_position_named('premanip_2')
+bender.l_arm.move_joint([0.2423, 0.1876, 0.3588, 1.8841, -0.3993, -0.5340])
+bender.l_gripper.open()
+bender.l_arm.move_joint([0.5053, 0.0525, 0.4903, 1.3512, -0.3799, -0.2756])
+bender.l_gripper.close()
+bender.l_arm.move_joint([0.279, 0.054, 0.383, 1.776, 0.061, 0.895])
+bender.l_arm.set_position_named('premanip_2')
+bender.l_arm.set_position_named('premanip_1')
+bender.l_arm.set_position_named('home')
+
+PLACE_OBJECT
+
+bender.l_arm.set_position_named('premanip_1')
+bender.l_arm.set_position_named('premanip_2')
+bender.l_arm.move_joint([0.8,0.0,0.0,1.4,0.0,-0.5])
+bender.l_arm.move_joint([1.0,0.0,0.0,1.0,0.0,-0.3])
+bender.l_gripper.open()
+bender.l_arm.move_joint([0.8,0.0,0.0,1.4,0.0,-0.5])
+bender.l_gripper.close()
+bender.l_arm.set_position_named('premanip_2')
+bender.l_arm.set_position_named('premanip_1')
+bender.l_arm.set_position_named('home')

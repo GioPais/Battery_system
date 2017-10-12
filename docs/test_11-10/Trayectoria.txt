@@ -1,0 +1,83 @@
+header: 
+  seq: 0
+  stamp: 
+    secs: 1320
+    nsecs: 118000000
+  frame_id: map
+pose: 
+  position: 
+    x: 0.599662183271
+    y: -0.0443047478162
+    z: 0.809333240858
+  orientation: 
+    x: 0.655743734627
+    y: -0.649858305472
+    z: 0.270512229755
+    w: -0.272960566491
+[INFO] [/sm_arm]: Selected arm: "l_arm"
+header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: bender/base_link
+pose: 
+  position: 
+    x: 0.629715468405
+    y: 0.0363929930077
+    z: 0.809332485754
+  orientation: 
+    x: -0.652807813736
+    y: 0.652807847817
+    z: -0.271738747087
+    w: 0.271738708111
+
+
+========================================
+Detected Position: "0.639715468405", "0.0363929930077", "0.839332485754"
+========================================
+Grap filtered:  "4251" 
+Wrist Position: "0.50208556884", "-0.0859743135073", "-0.290001119849"
+========================================
+publishing marker
+grasp selected:  "0.505396330597", "0.0525980017061", "0.490372178096", "1.3512070985", "-0.37996969415", "-0.275684863046"
+========================================
+
+Planning "l_arm" to:  [1.674, -0.041, -0.89, 0.129, -0.066, 1.053] MALO
+Planning "l_arm" to:  [1.782, -0.031, -0.23, 0.129, -0.102, 0.997] MALO
+
+
+Planning "l_arm" to:  (0.24234481334645347, 0.1876188032177702, 0.3588281449962123, 1.8841881864879906, -0.39934179311482687, -0.5340275183514697)
+Opening l_gripper.
+Sending new goal for "l_arm"
+Closing l_gripper.
+moving to:  [0.279, 0.054, 0.383, 1.776, 0.061, 0.895]
+Planning "l_arm" to:  [1.782, -0.031, -0.23, 0.129, -0.102, 0.997]
+Planning "l_arm" to:  [1.674, -0.041, -0.89, 0.129, -0.066, 1.053]
+Planning "l_arm" to:  [0.0, 0.1, 0.0, 0.0, 0.0, 0.0]
+
+
+TAKE_OBJECT
+home 		:	bender.l_arm.set_position_named('home')
+pre1 		:	bender.l_arm.set_position_named('premanip_1')
+pre2 		:	bender.l_arm.set_position_named('premanip_2')
+preGrasp 	:	[0.2423, 0.1876, 0.3588, 1.8841, -0.3993, -0.5340]
+open grip 	:	bender.l_gripper.open()
+Grasp 		:	[0.5053, 0.0525, 0.4903, 1.3512, -0.3799, -0.2756]
+close grip 	:	bender.l_gripper.close()
+PostGrasp 	:	[0.279, 0.054, 0.383, 1.776, 0.061, 0.895]
+pre2 		:	bender.l_arm.set_position_named('premanip_2')
+pre1 		:	bender.l_arm.set_position_named('premanip_1')
+home 		:	bender.l_arm.set_position_named('home')
+
+PLACE_OBJECT
+pre1 		:	bender.l_arm.set_position_named('premanip_1')
+pre2 		:	bender.l_arm.set_position_named('premanip_2')
+prePlace 	:	[0.8,0.0,0.0,1.4,0.0,-0.5]
+Place 		:	[1.0,0.0,0.0,1.0,0.0,-0.3]
+open grip 	:	bender.l_gripper.open()
+prePlace 	:	[0.8,0.0,0.0,1.4,0.0,-0.5]
+close grip 	:	bender.l_gripper.close()
+pre2 		:	bender.l_arm.set_position_named('premanip_2')
+pre1 		:	bender.l_arm.set_position_named('premanip_1')
+home		:	bender.l_arm.set_position_named('home')
